@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/border_focused"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/popup_cep_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0px"
+        android:background="@android:color/background_dark"
+        android:orientation="vertical"
+        android:padding="0px" >
+
+        <!-- by default all items are closed -->
+
+        <LinearLayout
+            android:id="@+id/popup_cap_select"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="@string/popup_cap_select"
+                android:textSize="10pt" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/popup_cap_copy"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="@string/popup_cap_copy"
+                android:textSize="10pt" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/popup_cap_cut"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="@string/popup_cap_cut"
+                android:textSize="10pt" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/popup_cap_paste"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="@string/popup_cap_paste"
+                android:textSize="10pt" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

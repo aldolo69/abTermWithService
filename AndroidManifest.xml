@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ab.term"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="11" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_terminal"
+        android:label="@string/app_name"
+          >
+        <activity
+            android:name="ab.term.MainActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="ab.term.CmdLineService" />
+        <service android:name="ab.term.OutputService" />
+
+        <activity
+            android:name="ab.term.SettingsActivity"
+            
+            android:label="@string/title_activity_settings" >
+        </activity>
+    </application>
+
+</manifest>

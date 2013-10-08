@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/ab.term"
+    style="@style/BW"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white"
+        android:bufferType="spannable"
+        android:textCursorDrawable="@null"
+        android:cursorVisible="true"
+        android:inputType="text|textNoSuggestions"
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutButtons"
+        style="@style/BW"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText" >
+
+        <Button
+            android:id="@+id/buttonDown"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:focusable="false"
+            android:text="\u2193" />
+
+        <Button
+            android:id="@+id/buttonUp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:focusable="false"
+            android:text="\u2191" />
+<Button
+            android:id="@+id/buttonCtrl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:focusable="false"
+            android:text="Ctrl" />
+        
+        <Button
+            android:id="@+id/buttonEnter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:focusable="false"
+            android:text="\u21b5" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/outputText"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/linearLayoutButtons"
+        android:background="@android:color/black"
+        android:cursorVisible="true"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:textColor="#ff00ff00" />
+
+</RelativeLayout>

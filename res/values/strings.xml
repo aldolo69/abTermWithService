@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">abTerm</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_close">Quit</string>
+    <string name="action_show">Show</string>
+    <string name="action_clktoshow">Click to show</string>
+    <string name="action_clktoclose">Click to close</string>
+    <string name="hidden">hidden</string>
+    <string name="running">running</string>
+
+    
+    
+    
+    <!-- mainmenu popup -->
+    <string name="popup_mainmenu_settings">Settings</string>
+    <string name="popup_mainmenu_quit">Quit</string>
+    
+    <!-- cut&paste popup -->
+    <string name="popup_cap_select">Select</string>
+    <string name="popup_cap_cut">Cut</string>
+    <string name="popup_cap_paste">Paste</string>
+    <string name="popup_cap_copy">Copy</string>
+
+    <!-- settings string -->
+     <string name="title_activity_settings">Settings</string>
+    <string name="settings_fonttype_title">Font type</string>
+    <string name="settings_fonttype_key" translatable="false">settings_key_fonttype</string>
+    <string name="settings_fonttype_default" translatable="false">0</string>
+    
+    <string name="settings_fontsize_title">Font size</string>
+    <string name="settings_fontsize_key" translatable="false">settings_key_fontsize</string>
+    <string name="settings_fontsize_default" translatable="false">8</string>
+     
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+    <ListPreference
+            android:title="@string/settings_fonttype_title"
+            android:entries="@array/settings_fonttype_labels"
+            android:entryValues="@array/settings_fonttype_values"
+            android:key="@string/settings_fonttype_key"
+            android:defaultValue="@string/settings_fonttype_default" />
+        <ListPreference
+            android:title="@string/settings_fontsize_title"
+            android:entries="@array/settings_fontsize_labels"
+            android:entryValues="@array/settings_fontsize_values"
+            android:key="@string/settings_fontsize_key"
+            android:defaultValue="@string/settings_fontsize_default" />
+   
+ 
+</PreferenceScreen>
